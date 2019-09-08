@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "More Video Speeds for edX Player",
+    "description": "Enables faster video playback speeds for the video player on edX.",
+    "icons": {"128": "speed.png"},
+    "content_scripts": [
+        {
+          "matches": ["https://courses.edx.org/courses/*"],
+          "js": ["content.js"]
+        }
+    ],
+    "version": "1.0"
+}
